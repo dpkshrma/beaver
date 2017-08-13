@@ -1,0 +1,86 @@
+@import "ui-variables";
+.grd-task-item {
+  display: flex;
+  border-bottom: 1px solid @base-border-color;
+}
+.grd-task-item-action {
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+.grd-task-item-check {
+  height: 20px;
+  width: 20px;
+  border: 1px solid @text-color-subtle;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 12px;
+  margin-top: 2px;
+  padding: 0;
+  background: rgba(0,0,0,0);
+  &:hover {
+    border: 1px solid @text-color;
+    .icon {
+      color: @text-color;
+      margin-left: 1px;
+    }
+  }
+  .icon {
+    color: @text-color-subtle;
+    margin-left: 1px;
+  }
+}
+.grd-task-item-content {
+  width: 100%;
+}
+.grd-task-item-check--complete {
+  border-color: @text-color-success;
+  .icon {
+    color: @text-color-success;
+  }
+  &:hover {
+    border-color: @text-color-success;
+    .icon {
+      color: @text-color-success;
+    }
+  }
+}
+.grd-task-item-heading {
+  display: flex;
+  justify-content: space-between;
+  .icon {
+    cursor: pointer;
+    color: @text-color-subtle;
+    &:before {
+      font-size: 12px;
+      margin-right: 0;
+      margin-left: 12px;
+    }
+  }
+  .icon-pencil:hover {
+    color: @text-color-warning;
+  }
+  .icon-trashcan:hover {
+    color: @text-color-error;
+  }
+}
+.grd-task-item-title {
+  font-size: 16px;
+  cursor: pointer;
+}
+.grd-task-item-info {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  .icon:before {
+    font-size: 12px;
+    margin-right: 0;
+  }
+  div {
+    margin-right: 16px;
+  }
+}
+.grd-task-item-description {
+  margin-top: 8px;
+}
