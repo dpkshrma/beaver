@@ -1,10 +1,21 @@
 {
-  "name": "package-generator-babel",
+  "name": "beaver",
   "main": "./lib/beaver",
   "version": "0.3.0",
-  "description": "A package generator for atom using babel",
+  "description": "Todo App for Atom Editor",
+  "keywords": [
+    "todo",
+    "todoapp",
+    "todolist"
+  ],
   "repository": "https://github.com/dpkshrma/beaver",
+  "bugs": "https://github.com/dpkshrma/beaver/issues",
   "license": "MIT",
+  "author": {
+    "name": "Deepak Sharma",
+    "email": "dpkshrma01@gmail.com"
+  },
+  "contributors": [],
   "engines": {
     "atom": ">0.50.0"
   },
