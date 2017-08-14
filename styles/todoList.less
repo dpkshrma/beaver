@@ -1,15 +1,15 @@
 @import "ui-variables";
-.grd-task-item {
+.grd-todo-item {
   display: flex;
   border-bottom: 1px solid @base-border-color;
 }
-.grd-task-item-action {
+.grd-todo-item-action {
   cursor: pointer;
   &:disabled {
     cursor: not-allowed;
   }
 }
-.grd-task-item-check {
+.grd-todo-item-check {
   height: 20px;
   width: 20px;
   border: 1px solid @text-color-subtle;
@@ -31,10 +31,10 @@
     margin-left: 1px;
   }
 }
-.grd-task-item-content {
+.grd-todo-item-content {
   width: 100%;
 }
-.grd-task-item-check--complete {
+.grd-todo-item-check--complete {
   border-color: @text-color-success;
   .icon {
     color: @text-color-success;
@@ -46,7 +46,7 @@
     }
   }
 }
-.grd-task-item-heading {
+.grd-todo-item-heading {
   display: flex;
   justify-content: space-between;
   .icon {
@@ -65,11 +65,11 @@
     color: @text-color-error;
   }
 }
-.grd-task-item-title {
+.grd-todo-item-title {
   font-size: 16px;
   cursor: pointer;
 }
-.grd-task-item-info {
+.grd-todo-item-info {
   margin-top: 4px;
   display: flex;
   align-items: center;
@@ -81,6 +81,6 @@
     margin-right: 16px;
   }
 }
-.grd-task-item-description {
+.grd-todo-item-description {
   margin-top: 8px;
 }
