@@ -1,9 +1,9 @@
 {
   "name": "package-generator-babel",
-  "main": "./lib/grind",
+  "main": "./lib/beaver",
   "version": "0.3.0",
   "description": "A package generator for atom using babel",
-  "repository": "https://github.com/dpkshrma/grind",
+  "repository": "https://github.com/dpkshrma/beaver",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
