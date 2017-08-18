@@ -1,7 +1,7 @@
 {
   "name": "beaver",
   "main": "./lib/beaver",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Todo App for Atom Editor",
   "keywords": [
     "todo",
