@@ -10,7 +10,7 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-asap@~2.0.3:
+asap@^2.0.3, asap@~2.0.3:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
 
@@ -47,6 +47,19 @@ create-react-class@^15.6.0:
     fbjs "^0.8.9"
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
+
+disposables@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/disposables/-/disposables-1.0.1.tgz#064727a25b54f502bd82b89aa2dfb8df9f1b39e3"
+
+dnd-core@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-2.4.0.tgz#c4a5bc2aea75164f8a295d769d5f551810e7d411"
+  dependencies:
+    asap "^2.0.3"
+    invariant "^2.0.0"
+    lodash "^4.2.0"
+    redux "^3.2.0"
 
 encoding@^0.1.11:
   version "0.1.12"
@@ -99,6 +112,10 @@ foreach@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
 
+hoist-non-react-statics@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
+
 iconv-lite@~0.4.13:
   version "0.4.18"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.18.tgz#23d8656b16aae6742ac29732ea8f0336a4789cf2"
@@ -106,6 +123,12 @@ iconv-lite@~0.4.13:
 immediate@~3.0.5:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
+
+immutability-helper@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/immutability-helper/-/immutability-helper-2.3.1.tgz#8ccfce92157208c120b2afad7ed05c11114c086e"
+  dependencies:
+    invariant "^2.2.0"
 
 inherits@~2.0.1:
   version "2.0.3"
@@ -117,6 +140,12 @@ inline-process-browser@^1.0.0:
   dependencies:
     falafel "^1.0.1"
     through2 "^0.6.5"
+
+invariant@^2.0.0, invariant@^2.1.0, invariant@^2.2.0:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
+  dependencies:
+    loose-envify "^1.0.0"
 
 is-stream@^1.0.1:
   version "1.1.0"
@@ -160,7 +189,11 @@ localforage@^1.3.0:
   dependencies:
     lie "3.0.2"
 
-lodash@^4.17.4:
+lodash-es@^4.2.1:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
+
+lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -246,6 +279,23 @@ react-collapse@^4.0.3:
   dependencies:
     prop-types "^15.5.8"
 
+react-dnd-html5-backend@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-2.4.1.tgz#439d2bcaf8bd8b87a51386beb51c128826182ddd"
+  dependencies:
+    lodash "^4.2.0"
+
+react-dnd@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/react-dnd/-/react-dnd-2.4.0.tgz#96f0042cd4cd375b4f0c3413f6ec84d267b7d792"
+  dependencies:
+    disposables "^1.0.1"
+    dnd-core "^2.4.0"
+    hoist-non-react-statics "^1.2.0"
+    invariant "^2.1.0"
+    lodash "^4.2.0"
+    prop-types "^15.5.8"
+
 react-dom@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
@@ -291,6 +341,15 @@ recast@^0.10.1:
     private "~0.1.5"
     source-map "~0.5.0"
 
+redux@^3.2.0:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-3.7.2.tgz#06b73123215901d25d065be342eb026bc1c8537b"
+  dependencies:
+    lodash "^4.2.1"
+    lodash-es "^4.2.1"
+    loose-envify "^1.1.0"
+    symbol-observable "^1.0.3"
+
 setimmediate@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
@@ -308,6 +367,10 @@ source-map@~0.5.0:
 string_decoder@~0.10.x:
   version "0.10.31"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
+
+symbol-observable@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
 
 through2@^0.6.2, through2@^0.6.5:
   version "0.6.5"
