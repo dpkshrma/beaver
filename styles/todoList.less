@@ -1,4 +1,25 @@
 @import "ui-variables";
+.todo-list {
+  overflow-y: scroll;
+  height: 86vh;
+}
+.todo-list-actions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  margin-bottom: 0 !important;
+}
+.todo-list-actions__item {
+  margin: auto 12px;
+  cursor: pointer;
+  &.inactive {
+    background: @base-background-color !important;
+    color: @text-color-subtle !important;
+  }
+}
 .todo-item {
   display: flex;
   border-bottom: 1px solid @base-border-color;

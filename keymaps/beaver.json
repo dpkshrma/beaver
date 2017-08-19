@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-shift-J": "beaver:toggle"
+    "ctrl-shift-J": "beaver:toggle",
+    "cmd-shift-J": "beaver:toggle"
   }
 }
