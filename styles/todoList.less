@@ -1,15 +1,15 @@
 @import "ui-variables";
-.grd-todo-item {
+.todo-item {
   display: flex;
   border-bottom: 1px solid @base-border-color;
 }
-.grd-todo-item-action {
+.todo-item-action {
   cursor: pointer;
   &:disabled {
     cursor: not-allowed;
   }
 }
-.grd-todo-item-check {
+.todo-item-check {
   height: 20px;
   width: 20px;
   border: 1px solid @text-color-subtle;
@@ -31,10 +31,10 @@
     margin-left: 1px;
   }
 }
-.grd-todo-item-content {
+.todo-item-content {
   width: 100%;
 }
-.grd-todo-item-check--complete {
+.todo-item-check--complete {
   border-color: @text-color-success;
   .icon {
     color: @text-color-success;
@@ -46,7 +46,7 @@
     }
   }
 }
-.grd-todo-item-heading {
+.todo-item-heading {
   display: flex;
   justify-content: space-between;
   .icon {
@@ -65,11 +65,11 @@
     color: @text-color-error;
   }
 }
-.grd-todo-item-title {
+.todo-item-title {
   font-size: 16px;
   cursor: pointer;
 }
-.grd-todo-item-info {
+.todo-item-info {
   margin-top: 4px;
   display: flex;
   align-items: center;
@@ -81,7 +81,7 @@
     margin-right: 16px;
   }
 }
-.grd-todo-item-description {
+.todo-item-description {
   padding-top: 8px;
   overflow: hidden;
 }
