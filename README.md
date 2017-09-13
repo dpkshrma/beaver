@@ -2,6 +2,8 @@
 
 A simple todo plugin for atom.
 
+![add todo](./.github/gifs/intro.gif)
+
 ## How to get it?
 - Open terminal and type `apm install beaver` Or
 - Open Settings view from command palette(`cmd+shift+p`)
