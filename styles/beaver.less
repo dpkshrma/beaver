@@ -6,12 +6,18 @@
 #beaver-app {
   width: 360px;
 }
+.panel-heading {
+  border: none !important;
+}
 .grd-horizontal-list {
   display: flex;
 }
 .top-menu-button {
-  i {
+  i.icon.icon-three-bars {
     cursor: pointer;
+    &::before {
+      vertical-align: -2px;
+    }
   }
 }
 .top-menu-item {

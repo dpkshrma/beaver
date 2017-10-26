@@ -3,6 +3,14 @@
   overflow-y: scroll;
   height: 86vh;
 }
+background-tips {
+  ul.background-message > li.message.fade-in {
+    opacity: 0.4;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
 .todo-list-actions {
   position: absolute;
   bottom: 0;
@@ -13,6 +21,9 @@
   margin-bottom: 0 !important;
 }
 .todo-list-actions__item {
+  border-radius: 0.5rem;
+  padding: 3px 7px;
+  line-height: 1.2;
   margin: auto 12px;
   cursor: pointer;
   &.inactive {
